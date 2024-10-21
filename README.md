@@ -1,50 +1,38 @@
-# React + TypeScript + Vite
+# 💸 Tip & Total Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-18.2.0-blue) 
+![TypeScript](https://img.shields.io/badge/TypeScript-4.9-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Build](https://img.shields.io/badge/Build-passing-brightgreen)
 
-Currently, two official plugins are available:
+> 🚀 Un proyecto simple y eficiente para calcular propinas y el total de consumo en restaurantes, construido con **React** y **TypeScript**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Descripción
 
-## Expanding the ESLint configuration
+Esta aplicación te permite calcular fácilmente la propina y el costo total de tu consumo en restaurantes, bares o cualquier lugar donde necesites dejar propina. Desarrollada con **React** y **TypeScript**, esta herramienta te garantiza una experiencia rápida, confiable y sin complicaciones.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🛠️ Características
 
-- Configure the top-level `parserOptions` property like this:
+- **Cálculo en tiempo real**: Obtén el monto de la propina y el total al momento.
+- **Interfaz amigable**: Diseño simple y limpio para que sea fácil de usar.
+- **Selector de porcentaje de propina**: Elige entre 5%, 10%, 15%, 20% o personaliza tu propio porcentaje.
+- **Responsive**: Perfectamente adaptable para dispositivos móviles, tabletas y computadoras.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🖼️ Capturas de pantalla
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+![Captura de la app](./screenshots/captura.png)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 🚀 Tecnologías Utilizadas
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **React** - Librería para construir interfaces de usuario.
+- **TypeScript** - Superconjunto tipado de JavaScript que mejora el desarrollo y la mantenibilidad del código.
+- **CSS Modules** - Estilos encapsulados para evitar conflictos de clases.
+- **Vite** - Herramienta de desarrollo rápida para aplicaciones de frontend.
+
+## 🚧 Instalación y Ejecución
+
+Sigue estos pasos para clonar y ejecutar el proyecto en tu entorno local:
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/tip-calculator.git
